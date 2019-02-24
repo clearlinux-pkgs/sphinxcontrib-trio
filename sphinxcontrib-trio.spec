@@ -4,12 +4,12 @@
 #
 Name     : sphinxcontrib-trio
 Version  : 1.0.2
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/df/89/98f12fee9f805eeb1741c6e6b144261e879e9793aeea80770d339e1b911f/sphinxcontrib-trio-1.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/df/89/98f12fee9f805eeb1741c6e6b144261e879e9793aeea80770d339e1b911f/sphinxcontrib-trio-1.0.2.tar.gz
 Summary  : Make Sphinx better at documenting Python functions and methods
 Group    : Development/Tools
-License  : Apache-2.0 MIT
+License  : -or- Apache-2.0 MIT
 Requires: sphinxcontrib-trio-license = %{version}-%{release}
 Requires: sphinxcontrib-trio-python = %{version}-%{release}
 Requires: sphinxcontrib-trio-python3 = %{version}-%{release}
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1548687521
+export SOURCE_DATE_EPOCH=1551038400
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
