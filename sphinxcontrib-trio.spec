@@ -4,7 +4,7 @@
 #
 Name     : sphinxcontrib-trio
 Version  : 1.1.0
-Release  : 5
+Release  : 6
 URL      : https://files.pythonhosted.org/packages/05/12/442779c256f7610cbb8292ce7d8b5ec787ac07cfedf837ba11225628f7c4/sphinxcontrib-trio-1.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/05/12/442779c256f7610cbb8292ce7d8b5ec787ac07cfedf837ba11225628f7c4/sphinxcontrib-trio-1.1.0.tar.gz
 Summary  : Make Sphinx better at documenting Python functions and methods
