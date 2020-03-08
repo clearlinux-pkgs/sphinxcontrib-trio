@@ -4,7 +4,7 @@
 #
 Name     : sphinxcontrib-trio
 Version  : 1.1.0
-Release  : 8
+Release  : 9
 URL      : https://files.pythonhosted.org/packages/05/12/442779c256f7610cbb8292ce7d8b5ec787ac07cfedf837ba11225628f7c4/sphinxcontrib-trio-1.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/05/12/442779c256f7610cbb8292ce7d8b5ec787ac07cfedf837ba11225628f7c4/sphinxcontrib-trio-1.1.0.tar.gz
 Summary  : Make Sphinx better at documenting Python functions and methods
@@ -19,17 +19,13 @@ BuildRequires : buildreq-distutils3
 
 %description
 sphinxcontrib-trio
-==================
-This sphinx extension helps you document Python code that uses
-async/await, or abstract methods, or context managers, or generators,
-or ... you get the idea. It works by making sphinx's regular
-directives for documenting Python functions and methods smarter and
-more powerful. The name is because it was originally written for the
-`Trio <https://trio.readthedocs.io>`__ project, and I'm not very
-creative. But don't be put off – there's nothing Trio- or
-async-specific about this extension; any Python project can
-benefit. (Though projects using async/await probably benefit the most,
-since sphinx's built-in tools are especially inadequate in this case.)
+        ==================
+        
+        This sphinx extension helps you document Python code that uses
+        async/await, or abstract methods, or context managers, or generators,
+        or ... you get the idea. It works by making sphinx's regular
+        directives for documenting Python functions and methods smarter and
+        more powerful. The name is because it was originally written for the
 
 %package license
 Summary: license components for the sphinxcontrib-trio package.
@@ -52,7 +48,8 @@ python components for the sphinxcontrib-trio package.
 Summary: python3 components for the sphinxcontrib-trio package.
 Group: Default
 Requires: python3-core
-Provides: pypi(sphinxcontrib-trio)
+Provides: pypi(sphinxcontrib_trio)
+Requires: pypi(sphinx)
 
 %description python3
 python3 components for the sphinxcontrib-trio package.
@@ -67,8 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582918554
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583697621
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
